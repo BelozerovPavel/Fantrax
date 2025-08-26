@@ -1,0 +1,99 @@
+body {
+    
+   background: linear-gradient(180deg, #6a11cb 0%, #2575fc 30%, #f4f4f4 100%);
+}
+
+/* Стили для шапки */
+header {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 58px;
+    background: linear-gradient(90deg, #ff0000, #ff6600, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fire 1s infinite alternate;
+}
+
+/* Навигация */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* Блок игроков */
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.player-card {
+   width: 200px;
+   text-align: center;
+   padding: 12px;
+   position: relative;
+   background: linear-gradient(135deg, rgb(240, 240, 240), rgb(200, 200, 200));
+   border-radius: 20px;
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+   transition: transform 0.3s ease-in-out;
+}
+
+.player-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.player-card h2 {
+    font-size: 22px;
+    color: #333;
+    margin: 8px 0 4px;
+    
+}
+
+.club-logo {
+    width: 60px;
+    height: auto;
+    position: relative;
+    max-width: 50%;
+    
+}
+
+.player-card:hover {
+    transform: scale(1.2);
+    
+}
+
+@media (max-width: 600px) {
+    .players {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@keyframes fire {
+    0% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff6600, 0 0 15px #ffff00; }
+    50% { text-shadow: 0 0 10px #ff3300, 0 0 20px #ff6600, 0 0 30px #ffff00; }
+    100% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff6600, 0 0 15px #ffff00; }
+}
