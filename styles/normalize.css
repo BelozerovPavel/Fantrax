@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /**
   Нормализация блочной модели
  */
@@ -205,6 +206,8 @@ svg * {
     scroll-behavior: auto !important;
   }
 =======
+=======
+>>>>>>> Stashed changes
 /**
   Нормализация блочной модели
  */
@@ -410,5 +413,8 @@ svg * {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
